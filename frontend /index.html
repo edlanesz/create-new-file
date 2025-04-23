@@ -1,0 +1,74 @@
+// frontend/index.html
+/*
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoções Amazon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .produto {
+      border: 1px solid #ddd;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .produto img {
+      max-width: 150px;
+      border-radius: 8px;
+    }
+    .produto-info {
+      flex-grow: 1;
+    }
+    .produto a {
+      display: inline-block;
+      margin-top: 8px;
+      background-color: #0077cc;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Promoções da Amazon</h1>
+  <div id="lista-produtos"></div>
+
+  <script>
+    fetch('http://localhost:3000/api/promocoes')
+      .then(res => res.json())
+      .then(produtos => {
+        const container = document.getElementById('lista-produtos');
+        produtos.forEach(prod => {
+          const div = document.createElement('div');
+          div.className = 'produto';
+          div.innerHTML = `
+            <img src="${prod.imagem}" alt="${prod.titulo}" />
+            <div class="produto-info">
+              <h2>${prod.titulo}</h2>
+              <p><strong>${prod.preco}</strong></p>
+              <a href="${prod.link}" target="_blank">Ver na Amazon</a>
+            </div>
+          `;
+          container.appendChild(div);
+        });
+      });
+  </script>
+</body>
+</html>
+*/
+
+// README.md
